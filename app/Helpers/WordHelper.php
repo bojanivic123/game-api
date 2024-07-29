@@ -7,6 +7,7 @@ class WordHelper {
     {
         return count(array_unique(str_split($word)));
     }
+
     public function isWordPalindrome($word)
     {
         if ($word === strrev($word)) {
@@ -14,6 +15,7 @@ class WordHelper {
         }
         return false;
     }
+    
     public function isWordAlmostPalindrome($word)
     {
         $almostPalindrome = false;

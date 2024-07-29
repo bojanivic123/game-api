@@ -7,13 +7,14 @@ use App\Helpers\WordHelper;
 use Illuminate\Support\Facades\Http;
 use WordHelper as GlobalWordHelper;
 
-class WordController extends Controller
-{
+class WordController extends Controller {
+    
     private $wordHelper;
     public function __construct(WordHelper $wordHelper)
     {
         $this->wordHelper = $wordHelper;
     }
+
     public function checkWord(Request $request)
     {
         if (!$request->word) {
